@@ -1,4 +1,4 @@
-from pylab import plot, show, legend
+from pylab import plot, show, legend, xlabel, ylabel, title
 
 nyc_temp_2000 = [31.3, 37.3, 47.2, 51.0, 63.5,
                  71.3, 72.3, 72.7, 66.0, 57.0, 45.3, 31.1]
@@ -15,5 +15,8 @@ plot(months, nyc_temp_2000)
 plot(months, nyc_temp_2006)
 plot(months, nyc_temp_2012)
 legend([2000, 2006, 2012])
+title('Average monthly temperature in NYC')
+xlabel('Month')
+ylabel('Temperature')
 
 show()
